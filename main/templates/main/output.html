@@ -1,0 +1,101 @@
+{% extends 'main/common/header.html' %}
+{% load static %}
+{% block main %}
+    <link rel="stylesheet" href="{% static 'output/style.css' %}">
+    <title>OutputPage</title>
+
+    <main id="contents">
+      <div class="container">
+        <div class="teach_intro">
+          <div class="intro_content">
+            <div class="intro_certification">
+              <h3>대치맘 인증</h3>
+            </div>
+            <h1>아이의 눈높이를 고려한 <br />맞춤형 회화 수업</h1>
+            <h2>
+              외국인과의 대화에 가장 유용한 <br />
+              30가지 회화 TIP을 배울 수 있습니다 :)
+            </h2>
+          </div>
+          <div class="intro_face">
+            <img src="{% static 'output/img/sophie.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!--선생님 소개 / 한줄평 / 교육후기 버튼이 시작합니다.-->
+    <div class="teach_filter-tab-wrapper">
+      <div class="teach_filter-tab">
+        <ul class="filter_menu">
+          <li class="filter_menu-item active">
+            <a class="selected" href="#teach_info">강사/학원 소개</a>
+          </li>
+          <li class="filter_menu-item"><a href="#teach_goal">수업 목표</a></li>
+          <li class="filter_menu-item"><a href="#teach_category">수업카테고리</a></li>
+          <li class="filter_menu-item"><a href="#teach_locate">수업 지역</a></li>
+          <li class="filter_menu-item"><a href="#teach_pay">수업 비용</a></li>
+          <li class="filter_menu-item"><a href="#teach_review">교육가능연령</a></li>
+        </ul>
+      </div>
+    </div>
+      <!--선생님 소개 / 한줄평 / 교육후기 버튼이 끝났습니다.-->
+
+      <!--선생님에 대한 정보가 시작됩니다.-->
+
+      <!--강사/학원 소개에 대한 블럭입니다.-->
+    <div class="main_contents">
+      <div class="contents_name teach_info" id="teach_info">
+        <div class="content-title">강사/학원 <br>소개</div>
+        <div class="content-description">
+          
+        </div>
+      </div>
+      <!--강사/학원 소개에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 내용 및 목표에 대한 블럭입니다.-->
+      <div class="contents_name teach_major" id="teach_goal">
+        <div class="content-title">수업 목표</div>
+        <div class="content-description"></div>
+      </div>
+      <!--전문 분야에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 카테고리(메인 수업)에 대한 블럭입니다.-->
+      <div class="contents_name teach_category" id="teach_category">
+        <div class="content-title">수업<br>카테고리</div>
+        <div class="content-description"></div>
+      </div>
+      <!--수업 카테고리(메인 수업)에 대한 끝났습니다.-->
+
+      <!--선호하는 방문 지역에 대한 블럭입니다.-->
+      <div class="contents_name teach_locate" id="teach_locate">
+        <div class="content-title">선호방문<br>지역</div>
+        <div class="content-description"></div>
+      </div>
+      <!--선호하는 방문 지역에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 비용에 대한 블럭입니다.-->
+      <div class="contents_name teach_pay" id="teach_pay">
+        <div class="content-title">수업 비용</div>
+        <div class="content-description"></div>
+      </div>
+      <!--수업 비용에 대한 블럭이 끝났습니다.-->
+
+      <!--교육 가능 연령에 대한 블럭입니다.-->
+      <div class="contents_name teach_age" id="teach_age">
+        <div class="content-title">교육가능<br>연령</div>
+        <div class="content-description"></div>
+      </div>
+      <!--교육 가능 연령에 대한 블럭이 끝났습니다.-->
+
+      <!--상담하기에 대한 블럭입니다.-->
+      <div class="consult_btn">
+        <button class="consult_btn-click"><a class="consult_click" href="#">상담하기</a></button>
+      </div>
+      <!--상담하기에 대한 블럭이 끝났습니다.-->
+    </div>
+      
+      
+    </main>
+  </body>
+</html>
+{% endblock main %}

@@ -1,0 +1,210 @@
+{% extends 'main/common/header.html' %}
+{% load static %}
+{% block main %}
+    <link rel="stylesheet" href="{% static 'input/style.css' %}">
+    <script src="{% static 'input/main.js' %}"></script>
+    <title>InputPage</title>
+
+    <main id="contents">
+    <!--선생님 / 학원 소개 블럭입니다.-->
+    <div class="teacher_info-start">
+        선생님 / 학원 등록하기
+    </div>
+    <!--선생님 / 학원 소개 블럭입니다.-->
+
+    <!--선생님 / 학원 소개 블럭입니다.-->
+    <div class="main_contents">
+      <div class="contents_name teacher_intro" id="teacher_intro">
+        <div class="content-title">선생님 / <br>학원 소개</div>
+        <div class="content-description content-youtube">
+            <textarea placeholder="선생님 / 학원에 대한 소개를 간략하게 작성해주세요." name="ex_input" id="ex_input" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <!--선생님 / 학원 소개에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 소개(목표)에 대한 블럭입니다.-->
+      <div class="contents_name class_intro" id="class_intro">
+        <div class="content-title">수업 소개 / <br>목표</div>
+        <div class="content-description">
+            <textarea placeholder="수업에 대한 전반적인 내용과 목표를 자세하게 소개해주세요!" name="ex_input" id="ex_input" cols="30" rows="10"></textarea> 
+        </div>
+      </div>
+      <!--수업 소개(목표)에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 제목에 대한 블럭입니다.-->
+      <div class="contents_name class_name" id="class_name">
+        <div class="content-title">수업 제목</div>
+        <div class="content-description">
+            <textarea placeholder="수업 제목을 작성해주세요." name="ex_input" id="ex_input" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <!--수업 제목에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 카테고리에 대한 블럭입니다.-->
+      <div class="contents_name teacher_category" id="teacher_category">
+        <div class="content-title">수업 <br>카테고리</div>
+        <div class="category_only">
+        <div class="input_explain" id="category_only">
+            <li>카테고리는 수업에 가장 자신있는 과목 한 개만 선택해주세요!</li>
+            <li>기본 과목을 선택했다면, 나머지 두 과목은 선택할 수 없습니다!</li>
+        </div>
+        <div class="category">
+            <div class="content-description" id="main">
+                <select >
+                    <option value="1" selected>기본 과목을 선택해주세요.</option>
+                    <option value="2" >수학</option>
+                    <option value="3" >영어</option>
+                    <option value="5" >코딩</option>
+                </select>
+            </div>
+            <div class="content-description" id="sub">
+                <select >
+                    <option value="1" selected>체육 과목을 선택해주세요.</option>
+                    <option value="2" >축구</option>
+                    <option value="3" >태권도</option>
+                    <option value="4" >수영</option>
+                    
+                </select>
+            </div>
+            <div class="content-description" id="sub">
+                <select >
+                    <option value="1" selected>엔터테인먼트 과목을 선택해주세요.</option>
+                    <option value="2" >피아노</option>
+                    <option value="3" >클라리넷</option>
+                    <option value="4" >미술</option>
+                </select>
+            </div>
+        </div>
+    </div>
+      </div>
+      <!--수업 카테고리에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 등록 지역(메인)에 대한 블럭입니다.-->
+      <div class="contents_name teacher_location" id="teacher_location">
+        <div class="content-title">수업 지역<br>(메인)</div>
+        <div class="locations">
+            <div class="content-description" id="main">
+                <select >
+                    <option value="1" selected>'시 / 도'를 선택해주세요.</option>
+                    <option value="2" >서울</option>
+                </select>
+            </div>
+            <div class="content-description" id="sub">
+                <select >
+                    <option value="1" selected>'구'를 선택해주세요.</option>
+                    <option value="2" >강남구</option>
+                </select>
+            </div>
+        </div>
+      </div>
+      <!--수업 등록 지역(메인)에 대한 블럭이 끝났습니다.-->
+
+      <!--수업료에 대한 블럭입니다.-->
+      <div class="contents_name teacher_payment" id="teacher_payment">
+        <div class="content-title">수업료</div>
+        <div class="locations">
+            <div class="content-description" id="input_pay">
+              <div class="input_explain">
+                <li>본인이 희망하는 수업료를 아래의 범주에서 하나만 골라주세요.</li>
+                <li>수업료의 기준은 월 4회 / 1회당 2시간 기준입니다.</li>
+            </div>
+            <select>
+              <option value="1" selected>수업료 범위를 선택해주세요.</option>
+              <option value="2" >20만원 이하</option>
+              <option value="3" >21만원 - 40만원</option>
+              <option value="4" >41만원 - 60만원</option>
+              <option value="5" >61만원 - 80만원</option>
+              <option value="6" >81만원 이상</option>
+            </select>
+            </div>
+        </div>
+      </div>
+      <!--수업료에 대한 블럭이 끝났습니다.-->
+
+      <!--수업료에 대한 블럭입니다.-->
+      <div class="contents_name teacher_" id="teacher_location">
+        <div class="content-title">학생 연령 선택</div>
+        <div class="locations">
+            <div class="content-description" id="input_age">
+              <div class="input_explain">
+                <li>수업을 희망하는 학생의 나이대를 아래의 범주에서 하나만 골라주세요.</li>
+                <li>오직 한 범주만 선택이 가능하니, 신중하게 선택해주세요.</li>
+            </div>
+            <select>
+              <option value="1" selected>수업이 가능한 나이대를 골라주세요.</option>
+              <option value="2" >만4-5세</option>
+              <option value="3" >유치원생(만6-7세)</option>
+              <option value="4" >초1-2(만8-9세)</option>
+              <option value="5" >초3-4(만10-11세)</option>
+            </select>
+            </div>
+        </div>
+      </div>
+      <!--수업료에 대한 블럭이 끝났습니다.-->
+
+      <!--수업 형태에 대한 블럭입니다.-->
+      <div class="contents_name class_style" id="class_style">
+        <div class="content-title">수업 형태</div>
+        <div class="content-description radio-label">
+            <input
+                  class="filter"
+                  type="radio"
+                  name="radioButton"
+                  id="radio1"
+                />
+            <label class="radio-label" for="radio1">과외</label>
+        </div>
+        <div class="content-description radio-label">
+            <input
+                  class="filter"
+                  type="radio"
+                  name="radioButton"
+                  id="radio2"
+                />
+            <label class="radio-label" for="radio2">학원</label>
+        </div>
+      </div>
+
+        
+      </div>
+      <!--수업 형태에 대한 블럭이 끝났습니다.-->
+
+      <!--이력 및 전문분야에 대한 블럭입니다.-->
+      <div class="contents_name teacher_special" id="tteacher_special">
+        <div class="content-title">이력 /<br>전문 분야</div>
+        <div class="content-description filebox">
+            <div class="input_explain">
+                <li>전문 분야를 증빙할 수 있는 서류를 첨부해주세요.</li>
+                <li>재학 증명서, 토익, HSK, GTQ 등 공식적인 자료면 더욱 좋습니다</li>
+            </div>
+            <input type="file" id="uploadBtn" class="uploadBtn">
+        </div>
+      </div>
+      <!--이력 및 전문분야에 대한 끝났습니다.-->
+
+      <!--프로필 사진 등록에 대한 블럭입니다.-->
+      <div class="contents_name teacher_photo" id="teacher_photo">
+        <div class="content-title">프로필 사진</div>
+        <div class="content-description filebox">
+            <div class="input_explain">
+                <li>얼굴이 나오지 않은 사진들은 승인되지 않습니다.</li>
+                <li>학부모님들께 신뢰감을 줄 수 있는 사진으로 업로드해주세요.</li>
+            </div>
+            <input type="file" id="uploadBtn" class="uploadBtn">
+        </div>
+      </div>
+      <!--프로필 사진 등록에 대한 블럭이 끝났습니다.-->
+
+      <!--제출하기 버튼에 대한 블럭입니다.-->
+      <div class="submit_btn">
+        <button class="submit_btn-click"><a class="submit_click" href="#">제출하기</a></button>
+      </div>
+      <!--제출하기 버튼에 대한 블럭이 끝났습니다.-->
+
+    </div>
+
+    </main>
+    
+  </body>
+</html>
+{% endblock main %}
